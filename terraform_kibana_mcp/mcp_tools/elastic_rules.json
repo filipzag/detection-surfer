@@ -14,5 +14,9 @@
     {
         "name": "upload_rule",
         "description": "Upload (create) a new detection rule.\n\nArgs:\n    rule_content: The JSON string content of the rule to create."
+    },
+    {
+        "name": "get_detection_template",
+        "description": "Returns a predefined Elastic detection rule JSON template for use.\nThe template contains default tags, schedule, params, threat mapping, and an EQL query example."
     }
 ]

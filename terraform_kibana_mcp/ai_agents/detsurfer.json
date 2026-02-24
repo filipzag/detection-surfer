@@ -1,5 +1,5 @@
 {
-    "id": "detengsurfer",
+    "id": "detsurfer",
     "type": "chat",
     "name": "Detection surfer",
     "description": "God level detection engineer.",
@@ -9,7 +9,7 @@
     "avatar_color": "#0066f8",
     "avatar_symbol": "DS",
     "configuration": {
-        "instructions_file": "hunter_instructions.md",
+        "instructions_file": "detsurfer_instructions.md",
         "tools": [
             {
                 "tool_ids": [
@@ -22,6 +22,7 @@
                     "elastic_rules.enable_rule",
                     "elastic_rules.list_rules",
                     "elastic_rules.upload_rule",
+                    "elastic_rules.get_detection_template",
                     "platform.core.search",
                     "platform.core.execute_esql",
                     "platform.core.generate_esql",

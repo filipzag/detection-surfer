@@ -26,7 +26,7 @@ locals {
 # Wait for tools to be fully indexed before creating the agent
 resource "time_sleep" "wait_for_tools" {
   depends_on = [
-    restapi_object.bulk_create_mcp_tools
+    null_resource.bulk_create_mcp_tools
   ]
 
   create_duration = "30s"
