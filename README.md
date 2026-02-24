@@ -1,4 +1,4 @@
-![Detection Surfer](images/Gemini_Generated_Image_10mj9510mj9510mj(1).png)
+![Detection Surfer](images/det_surfer.jpg)
 
 # Detection Surfer
 
