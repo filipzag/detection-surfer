@@ -1,0 +1,118 @@
+[
+    {
+        "name": "analyze_coverage",
+        "description": "Analyze coverage statistics including breakdown by tactic and list of gaps"
+    },
+    {
+        "name": "batch_coverage_check",
+        "description": "Check coverage against multiple threat groups in one call. Returns compact stats for each group."
+    },
+    {
+        "name": "find_group_gaps",
+        "description": "Find techniques used by a threat group that you do NOT have coverage for"
+    },
+    {
+        "name": "generate_coverage_layer",
+        "description": "Generate a Navigator layer showing covered vs uncovered techniques (green=covered, red=gap)"
+    },
+    {
+        "name": "generate_gap_layer",
+        "description": "Generate a gap analysis layer comparing your coverage against a target set of techniques"
+    },
+    {
+        "name": "generate_group_layer",
+        "description": "Generate a Navigator layer highlighting all techniques used by a threat group"
+    },
+    {
+        "name": "generate_layer",
+        "description": "Generate an ATT&CK Navigator layer from a list of technique IDs with optional scores"
+    },
+    {
+        "name": "get_all_technique_ids",
+        "description": "Get a list of all valid technique IDs in the framework"
+    },
+    {
+        "name": "get_common_groups",
+        "description": "Get top 20 threat groups by technique count. Useful for quick selection without searching."
+    },
+    {
+        "name": "get_data_sources",
+        "description": "Get data sources that can detect a specific technique"
+    },
+    {
+        "name": "get_group",
+        "description": "Get a threat group by ID (e.g., G0016 for APT29)"
+    },
+    {
+        "name": "get_group_techniques",
+        "description": "Get all technique IDs used by a specific threat group"
+    },
+    {
+        "name": "get_mitigations",
+        "description": "Get mitigations for a specific technique"
+    },
+    {
+        "name": "get_software",
+        "description": "Get malware or tool by ID (e.g., S0154 for Cobalt Strike)"
+    },
+    {
+        "name": "get_stats",
+        "description": "Get ATT&CK framework statistics (version, counts by type, etc.)"
+    },
+    {
+        "name": "get_tactic",
+        "description": "Get a MITRE ATT&CK tactic by ID or shortname"
+    },
+    {
+        "name": "get_technique",
+        "description": "Get a MITRE ATT&CK technique by ID (e.g., T1059.001)"
+    },
+    {
+        "name": "get_technique_ids_by_platform",
+        "description": "Get ONLY technique IDs for a platform (lightweight - no full objects). Use this instead of list_techniques_by_platform when you just need IDs."
+    },
+    {
+        "name": "get_technique_ids_by_tactic",
+        "description": "Get ONLY technique IDs for a tactic (lightweight - no full objects). Use this instead of list_techniques_by_tactic when you just need IDs."
+    },
+    {
+        "name": "list_groups",
+        "description": "List all threat groups"
+    },
+    {
+        "name": "list_tactics",
+        "description": "List all ATT&CK tactics in matrix order"
+    },
+    {
+        "name": "list_techniques",
+        "description": "List all ATT&CK techniques with pagination"
+    },
+    {
+        "name": "list_techniques_by_platform",
+        "description": "List techniques for a specific platform"
+    },
+    {
+        "name": "list_techniques_by_tactic",
+        "description": "List all techniques for a specific tactic (e.g., execution, persistence)"
+    },
+    {
+        "name": "quick_coverage_check",
+        "description": "Quick coverage check against a threat group. Returns minimal stats (~200 bytes) instead of full gap analysis. Perfect for fast comparisons."
+    },
+    {
+        "name": "rebuild_index",
+        "description": "Force re-download and re-index the ATT&CK framework data"
+    },
+    {
+        "name": "search_groups",
+        "description": "Search threat groups by name, alias, or description"
+    },
+    {
+        "name": "search_software",
+        "description": "Search malware and tools by name or description"
+    },
+    {
+        "name": "search_techniques",
+        "description": "Search ATT&CK techniques by name, description, or detection guidance"
+    }
+]

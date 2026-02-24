@@ -1,0 +1,9 @@
+{
+    "name": "github",
+    "connector_type_id": ".mcp",
+    "config": {
+        "hasAuth": true,
+        "serverUrl": "https://api.githubcopilot.com/mcp"
+    },
+    "secrets": {}
+}

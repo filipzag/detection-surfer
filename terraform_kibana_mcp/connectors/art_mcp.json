@@ -1,0 +1,9 @@
+{
+    "name": "art",
+    "connector_type_id": ".mcp",
+    "config": {
+        "hasAuth": true,
+        "serverUrl": "http://13.60.220.23:2786/mcp"
+    },
+    "secrets": {}
+}

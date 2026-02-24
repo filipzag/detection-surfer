@@ -1,0 +1,66 @@
+[
+    {
+        "name": "create_branch",
+        "description": "Create a new branch in a GitHub repository"
+    },
+    {
+        "name": "create_or_update_file",
+        "description": "Create or update a single file in a GitHub repository. \nIf updating, you should provide the SHA of the file you want to update. Use this tool to create or update a file in a GitHub repository remotely; do not use it for local file operations.\n\nIn order to obtain the SHA of original file version before updating, use the following git command:\ngit ls-tree HEAD <path to file>\n\nIf the SHA is not provided, the tool will attempt to acquire it by fetching the current file contents from the repository, which may lead to rewriting latest committed changes if the file has changed since last retrieval.\n"
+    },
+    {
+        "name": "create_pull_request",
+        "description": "Create a new pull request in a GitHub repository."
+    },
+    {
+        "name": "delete_file",
+        "description": "Delete a file from a GitHub repository"
+    },
+    {
+        "name": "get_commit",
+        "description": "Get details for a commit from a GitHub repository"
+    },
+    {
+        "name": "get_file_contents",
+        "description": "Get the contents of a file or directory from a GitHub repository"
+    },
+    {
+        "name": "list_branches",
+        "description": "List branches in a GitHub repository"
+    },
+    {
+        "name": "list_commits",
+        "description": "Get list of commits of a branch in a GitHub repository. Returns at least 30 results per page by default, but can return more if specified using the perPage parameter (up to 100)."
+    },
+    {
+        "name": "list_pull_requests",
+        "description": "List pull requests in a GitHub repository. If the user specifies an author, then DO NOT use this tool and use the search_pull_requests tool instead."
+    },
+    {
+        "name": "merge_pull_request",
+        "description": "Merge a pull request in a GitHub repository."
+    },
+    {
+        "name": "pull_request_read",
+        "description": "Get information on a specific pull request in GitHub repository."
+    },
+    {
+        "name": "pull_request_review_write",
+        "description": "Create and/or submit, delete review of a pull request.\n\nAvailable methods:\n- create: Create a new review of a pull request. If \"event\" parameter is provided, the review is submitted. If \"event\" is omitted, a pending review is created.\n- submit_pending: Submit an existing pending review of a pull request. This requires that a pending review exists for the current user on the specified pull request. The \"body\" and \"event\" parameters are used when submitting the review.\n- delete_pending: Delete an existing pending review of a pull request. This requires that a pending review exists for the current user on the specified pull request.\n"
+    },
+    {
+        "name": "push_files",
+        "description": "Push multiple files to a GitHub repository in a single commit"
+    },
+    {
+        "name": "search_code",
+        "description": "Fast and precise code search across ALL GitHub repositories using GitHub's native search engine. Best for finding exact symbols, functions, classes, or specific code patterns."
+    },
+    {
+        "name": "search_pull_requests",
+        "description": "Search for pull requests in GitHub repositories using issues search syntax already scoped to is:pr"
+    },
+    {
+        "name": "search_repositories",
+        "description": "Find GitHub repositories by name, description, readme, topics, or other metadata. Perfect for discovering projects, finding examples, or locating specific repositories across GitHub."
+    }
+]

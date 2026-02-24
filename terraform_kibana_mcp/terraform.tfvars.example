@@ -1,0 +1,25 @@
+# Terraform Variables Example File
+# Copy this file to terraform.tfvars and fill in your actual values
+# DO NOT commit terraform.tfvars to version control
+
+# --- Elasticsearch ---
+elasticsearch_endpoint = "https://your-deployment.es.eu-central-1.aws.elastic.cloud"
+elasticsearch_api_key  = "YOUR_ELASTICSEARCH_API_KEY"
+
+# --- Kibana ---
+kibana_endpoint = "https://your-deployment.kb.eu-central-1.aws.elastic.cloud"
+kibana_api_key  = "YOUR_KIBANA_API_KEY"
+
+# --- AI Agent Builder ---
+ai_agent_api_path = "/api/agent_builder/agents"
+
+# --- MCP Bearer Tokens ---
+# Map of connector names to their respective bearer tokens.
+# Only connectors that require authentication need entries here.
+mcp_bearer_tokens = {
+  "art"           = "YOUR_ART_MCP_TOKEN"
+  "elastic_rules" = "YOUR_ELASTIC_RULES_MCP_TOKEN"
+  "detections"    = "YOUR_DETECTIONS_MCP_TOKEN"
+  "github"        = "YOUR_GITHUB_PAT_TOKEN"
+  "mitre"         = "YOUR_MITRE_MCP_TOKEN"
+}

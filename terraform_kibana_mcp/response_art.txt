@@ -1,0 +1,1 @@
+{"statusCode":400,"error":"Bad Request","message":"uri [/internal/agent_builder/tools/_bulk_create_mcp] with method [post] exists but is not available with the current configuration"}

@@ -1,0 +1,122 @@
+[
+    {
+        "name": "get_by_id",
+        "description": "Get a single detection by its ID"
+    },
+    {
+        "name": "list_all",
+        "description": "List all detections with pagination. Use for browsing the detection index."
+    },
+    {
+        "name": "list_by_mitre",
+        "description": "List detections that map to a specific MITRE ATT&CK technique"
+    },
+    {
+        "name": "list_by_logsource",
+        "description": "List Sigma detections filtered by logsource (category, product, or service)"
+    },
+    {
+        "name": "list_by_cve",
+        "description": "List detections that cover a specific CVE vulnerability"
+    },
+    {
+        "name": "list_by_analytic_story",
+        "description": "List Splunk detections that belong to a specific analytic story (e.g., \"Ransomware\", \"Data Destruction\")"
+    },
+    {
+        "name": "list_by_detection_type",
+        "description": "List detections by type (TTP, Anomaly, Hunting, Correlation)"
+    },
+    {
+        "name": "list_by_data_source",
+        "description": "List detections that use a specific data source (e.g., \"Sysmon\", \"Windows Security\", \"process_creation\")"
+    },
+    {
+        "name": "get_stats",
+        "description": "Get statistics about the indexed detections and stories"
+    },
+    {
+        "name": "get_technique_ids",
+        "description": "Get ONLY unique MITRE technique IDs (lightweight - no full detection data). Use this for Navigator layer generation or coverage analysis."
+    },
+    {
+        "name": "identify_gaps",
+        "description": "Identify detection gaps based on a threat profile (ransomware, apt, initial-access, persistence, credential-access, defense-evasion). Returns prioritized gaps with recommendations."
+    },
+    {
+        "name": "get_detection_list",
+        "description": "Get a lightweight list of detection names and IDs matching a search query. Returns ONLY name, id, source, mitre_ids - no queries or raw yaml. Use this when you need a simple list."
+    },
+    {
+        "name": "get_coverage_summary",
+        "description": "Get a lightweight coverage summary (~200 bytes) with tactic percentages. Use this for quick overviews instead of full analyze_coverage."
+    },
+    {
+        "name": "get_technique_count",
+        "description": "Get just the detection count for a technique (~50 bytes). Use this for quick coverage checks."
+    },
+    {
+        "name": "get_story",
+        "description": "Get detailed information about a specific analytic story by name"
+    },
+    {
+        "name": "get_query_patterns",
+        "description": "Get common query patterns for a MITRE technique based on existing detections. Returns SPL structure, common fields, macros used, and example queries. Use this before writing a detection to learn the conventions."
+    },
+    {
+        "name": "find_similar_detections",
+        "description": "Find existing detections similar to what you want to create. Use this to learn from existing detection logic and structure."
+    },
+    {
+        "name": "extract_patterns",
+        "description": "Extract and store patterns from all indexed detections. Run this to populate the pattern database for template generation."
+    },
+    {
+        "name": "list_by_mitre_tactic",
+        "description": "List detections by MITRE ATT&CK tactic (e.g., \"execution\", \"persistence\", \"credential-access\")"
+    },
+    {
+        "name": "search",
+        "description": "Full-text search across all detection fields (name, description, query, MITRE IDs, tags, CVEs, analytic stories, process names, file paths, registry paths)"
+    },
+    {
+        "name": "list_by_source",
+        "description": "List detections filtered by source type"
+    },
+    {
+        "name": "list_by_severity",
+        "description": "List detections filtered by severity level"
+    },
+    {
+        "name": "list_by_process_name",
+        "description": "List detections that reference a specific process name (e.g., \"powershell.exe\", \"w3wp.exe\", \"cmd.exe\")"
+    },
+    {
+        "name": "list_by_name_pattern",
+        "description": "List detections whose NAME matches a pattern, grouped by source. Returns just name + ID pairs."
+    },
+    {
+        "name": "smart_compare",
+        "description": "Compare detections across sources, tactics, or techniques for a given topic. Returns breakdown by source, tactic, and severity."
+    },
+    {
+        "name": "search_stories",
+        "description": "Search analytic stories by narrative, description, or name. Stories provide rich context about threat campaigns and detection strategies."
+    },
+    {
+        "name": "list_stories",
+        "description": "List all analytic stories with pagination"
+    },
+    {
+        "name": "list_stories_by_category",
+        "description": "List analytic stories by category (e.g., \"Malware\", \"Adversary Tactics\", \"Abuse\")"
+    },
+    {
+        "name": "list_saved_queries",
+        "description": "List all saved queries, optionally filtered by type."
+    },
+    {
+        "name": "suggest_detections",
+        "description": "Get detection suggestions for a specific technique. Returns existing detections, required data sources, and detection ideas."
+    }
+]

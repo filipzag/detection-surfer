@@ -1,0 +1,9 @@
+{
+    "name": "detections",
+    "connector_type_id": ".mcp",
+    "config": {
+        "hasAuth": true,
+        "serverUrl": " https://22c6-89-164-126-222.ngrok-free.app/mcp"
+    },
+    "secrets": {}
+}

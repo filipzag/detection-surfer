@@ -1,0 +1,9 @@
+{
+    "name": "elastic_rules",
+    "connector_type_id": ".mcp",
+    "config": {
+        "hasAuth": true,
+        "serverUrl": "https://7fbd-89-164-126-222.ngrok-free.app/mcp"
+    },
+    "secrets": {}
+}

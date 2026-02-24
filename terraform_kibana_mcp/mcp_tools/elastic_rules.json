@@ -1,0 +1,18 @@
+[
+    {
+        "name": "disable_rule",
+        "description": "Disable a detection rule by its ID.\n\nArgs:\n    rule_id: The unique identifier of the rule."
+    },
+    {
+        "name": "enable_rule",
+        "description": "Enable a detection rule by its ID.\n\nArgs:\n    rule_id: The unique identifier of the rule."
+    },
+    {
+        "name": "list_rules",
+        "description": "List detection rules from Elastic Security.\n\nArgs:\n    limit: The number of rules to return per page. Default 20.\n    page: The page number to return. Default 1."
+    },
+    {
+        "name": "upload_rule",
+        "description": "Upload (create) a new detection rule.\n\nArgs:\n    rule_content: The JSON string content of the rule to create."
+    }
+]

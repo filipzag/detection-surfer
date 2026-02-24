@@ -1,0 +1,11 @@
+{
+    "name": "mitre",
+    "connector_type_id": ".mcp",
+    "config": {
+        "serverUrl": "https://0ef2-89-164-126-222.ngrok-free.app/mcp",
+        "__tf_provider_context": ".mcp",
+        "hasAuth": true
+    },
+    "secrets": {},
+    "space_id": "default"
+}
