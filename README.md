@@ -38,8 +38,9 @@ The agent is forbidden from pushing directly to `main`. Every rule goes through 
 
 - Terraform ≥ 1.0
 - An Elastic Cloud deployment (Kibana + Elasticsearch) with an API key
-- MCP servers running and reachable (see each connector's JSON in `connectors/`)
 - GitHub PAT with repo scope (for the GitHub MCP)
+- MCP servers running and reachable (see each connector's JSON in `connectors/`)
+  > **Need to host the MCPs?** You can easily deploy the entire suite of required MCP servers using the unified Docker compose setup in the [MCP-tools-deploy](https://github.com/filipzag/MCP-tools-deploy) repository.
 
 ### 1. Configure variables
 
