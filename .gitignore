@@ -1,0 +1,20 @@
+# Local .terraform directory (contains modules and providers)
+terraform_kibana_mcp/.terraform/
+
+# Terraform state files (CRITICAL: contain secrets in plain text)
+*.tfstate
+*.tfstate.*
+*.backup
+# Crash logs
+crash.log
+crash.*.log
+
+# Variables files (where you likely keep sensitive API keys)
+*.tfvars
+*.tfvars.json
+
+# Ignore override files
+*override.tf
+*override.tf.json
+*_override.tf
+*_override.tf.json

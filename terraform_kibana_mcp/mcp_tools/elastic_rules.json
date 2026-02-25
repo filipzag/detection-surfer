@@ -1,22 +1,26 @@
 [
     {
         "name": "disable_rule",
-        "description": "Disable a detection rule by its ID.\n\nArgs:\n    rule_id: The unique identifier of the rule."
+        "description": "Disable a detection rule by its ID.\n\nArgs:\n    rule_id: The unique identifier of the rule (id)."
     },
     {
         "name": "enable_rule",
-        "description": "Enable a detection rule by its ID.\n\nArgs:\n    rule_id: The unique identifier of the rule."
-    },
-    {
-        "name": "list_rules",
-        "description": "List detection rules from Elastic Security.\n\nArgs:\n    limit: The number of rules to return per page. Default 20.\n    page: The page number to return. Default 1."
-    },
-    {
-        "name": "upload_rule",
-        "description": "Upload (create) a new detection rule.\n\nArgs:\n    rule_content: The JSON string content of the rule to create."
+        "description": "Enable a detection rule by its ID.\n\nArgs:\n    rule_id: The unique identifier of the rule (id)."
     },
     {
         "name": "get_detection_template",
         "description": "Returns a predefined Elastic detection rule JSON template for use.\nThe template contains default tags, schedule, params, threat mapping, and an EQL query example."
+    },
+    {
+        "name": "get_rule",
+        "description": "Get the full details of a single detection rule by its ID.\n\nArgs:\n    rule_id: The unique identifier of the rule (id)."
+    },
+    {
+        "name": "list_rules",
+        "description": "List all detection rules from Elastic Security. Returns a compact summary for each rule\n(id, name, MITRE TTPs, log source, and query type). Use get_rule to fetch full details.\n\nArgs:\n    filter: KQL string to filter rules. The available fields for this filter include:\n            - alert.attributes.name\n            - alert.attributes.enabled\n            - alert.attributes.tags\n            - alert.attributes.createdBy\n            - alert.attributes.interval\n            - alert.attributes.updatedBy\n            Example: 'alert.attributes.enabled: true' or 'alert.attributes.name: \"My Rule\"'"
+    },
+    {
+        "name": "upload_rule",
+        "description": "Upload (create or update) a new detection rule.\n\nArgs:\n    rule_content: The JSON string content of the rule to create or update."
     }
 ]

@@ -83,6 +83,28 @@ Open Kibana → AI Assistant → select the **Detection Surfer** agent. Give it 
 
 ---
 
+## Example Prompts
+
+**Threat-driven detection creation:**
+> "Create an EQL detection rule for credential dumping via LSASS (T1003.001) targeting Windows endpoints."
+
+**Coverage gap analysis:**
+> "Analyze our detection coverage against APT29. Identify gaps and suggest new rules for uncovered techniques."
+
+**Atomic Red Team validation:**
+> "Find and execute an Atomic Red Team test for T1059.001 (PowerShell), then verify the rule triggers in the logs."
+
+**CVE-based rule engineering:**
+> "Research CVE-2024-3400 and create a detection rule for exploitation attempts in our environment."
+
+**Rule lifecycle management:**
+> "List all active rules in the cluster and disable the ones related to deprecated log sources."
+
+**End-to-end workflow:**
+> "Create a detection for lateral movement via WMI (T1047). Research the technique, validate the schema, write the rule, test it with ART, and open a PR."
+
+---
+
 ## Destroy
 
 ```bash
@@ -107,3 +129,14 @@ terraform_kibana_mcp/
 ├── variables.tf         # Input variables
 └── terraform.tfvars     # Your secrets (git-ignored)
 ```
+
+---
+
+## MCP Server References
+
+This project utilizes the following open-source MCP server implementations. We highly encourage checking out their respective repositories:
+
+- [MHaggis/Security-Detections-MCP](https://github.com/MHaggis/Security-Detections-MCP)
+- [MHaggis/mitre-attack-mcp](https://github.com/MHaggis/mitre-attack-mcp)
+- [filipzag/elastic-security-MCP](https://github.com/filipzag/elastic-security-MCP)
+- [cyberbuff/atomic-red-team-mcp](https://github.com/cyberbuff/atomic-red-team-mcp)
