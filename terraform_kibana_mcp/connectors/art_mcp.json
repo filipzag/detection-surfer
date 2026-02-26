@@ -3,7 +3,7 @@
     "connector_type_id": ".mcp",
     "config": {
         "hasAuth": true,
-        "serverUrl": "http://13.60.59.113:2786/mcp"
+        "serverUrl": "http://56.228.3.143:2786/mcp"
     },
     "secrets": {}
 }

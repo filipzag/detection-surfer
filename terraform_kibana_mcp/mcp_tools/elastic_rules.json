@@ -17,7 +17,7 @@
     },
     {
         "name": "list_rules",
-        "description": "List all detection rules from Elastic Security. Returns a compact summary for each rule\n(id, name, MITRE TTPs, log source, and query type). Use get_rule to fetch full details.\n\nArgs:\n    filter: KQL string to filter rules. The available fields for this filter include:\n            - alert.attributes.name\n            - alert.attributes.enabled\n            - alert.attributes.tags\n            - alert.attributes.createdBy\n            - alert.attributes.interval\n            - alert.attributes.updatedBy\n            Example: 'alert.attributes.enabled: true' or 'alert.attributes.name: \"My Rule\"'"
+        "description": "List all detection rules from Elastic Security. Returns a compact summary for each rule\n(id, name, MITRE TTPs, log source, and query type). Use get_rule to fetch full details.\n\nArgs:\n    filter: Optional keyword string to filter rules by matching against any returned JSON fields."
     },
     {
         "name": "upload_rule",

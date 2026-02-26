@@ -23,6 +23,7 @@
                     "elastic_rules.list_rules",
                     "elastic_rules.upload_rule",
                     "elastic_rules.get_detection_template",
+                    "elastic_rules.get_rule",
                     "platform.core.execute_esql",
                     "platform.core.generate_esql",
                     "platform.core.list_indices",
